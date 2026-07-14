@@ -1,0 +1,19 @@
+# Direct dependencies only. Versions pinned to what this project was run with.
+#
+# PyTorch is installed separately — the RTX 5070 is Blackwell (sm_120) and needs
+# a CUDA 12.x build, which is not on PyPI's default index:
+#   uv pip install torch --index-url https://download.pytorch.org/whl/cu128
+# Verified working here: torch 2.13.0+cu132
+
+transformers==5.13.1
+datasets==5.0.0
+accelerate==1.14.0
+peft==0.19.1
+scikit-learn==1.9.0
+pandas==3.0.3
+matplotlib==3.11.0
+seaborn==0.13.2
+ftfy==6.3.1
+jupyter
+jupytext==1.19.4
+nbconvert==7.17.1
