@@ -40,28 +40,47 @@ Record last, from the figures already in `results/figures/`. Six slides,
 
 ## Slide 4 — Results (~60s)
 
-- Table: `results/test_metrics.csv` — both models + majority baseline.
-- Figure: `results/figures/confusion_matrices.png`.
-- State plainly: which model wins on weighted F1, on macro F1, and by how much.
-- Anchor against the published text-only MELD range (~57–65% weighted F1).
+| Model | weighted F1 | macro F1 | accuracy |
+|---|---|---|---|
+| majority baseline | 0.313 | 0.093 | 0.481 |
+| bert-base-uncased | 0.593 | 0.434 | 0.576 |
+| **roberta-base** | **0.605** | **0.460** | **0.591** |
+
+- Both models ≈ **5× the baseline's macro F1**, while the baseline already gets
+  48% *accuracy* — that contrast is the whole argument for the metric choice.
+- Inside the published text-only MELD range (~57–65% weighted F1).
+- **The punchline:** BERT won dev (0.603 vs 0.584), RoBERTa won test
+  (0.605 vs 0.593). **The ranking flipped.** One seed, ~0.01–0.02 gaps ⇒ the
+  honest claim is "not separated", not "RoBERTa wins".
+
+> This is the slide to be brave on. Reporting a flipped ranking is a better
+> result than pretending you found a winner.
 
 ## Slide 5 — Analysis: where it breaks (~60s)
 
-- Figure: `results/figures/per_class_f1.png`.
-- Top confusion pairs (from `results/confusion_pairs.csv`).
-- The honest limitation: median utterance is **6 words**. Lines like "What?"
-  and "Hey." have no emotion *in the text* — the label lives in delivery and
-  dialogue context the model never sees.
-- Hard evidence, not hand-waving: identical strings appear in test with
-  **different gold labels**. No text-only model can get both right.
-- Accuracy on ≤3-word utterances vs longer ones.
+- Figure: `results/figures/per_class_f1.png` + `confusion_matrices.png`.
+- Performance tracks frequency: neutral 0.73 → fear 0.14–0.22.
+- **Every** top confusion for both models is `X → neutral`. Rare emotions
+  collapse into the majority class.
+- Class weighting worked *and* overcorrected: RoBERTa fear recall 0.400 but
+  precision **0.154** — 5 of 6 "fear" predictions are wrong. ~38% of all errors
+  are neutral-misread-as-emotion vs ~18% the other way.
+- **The refuted hypothesis** (good slide material): we expected short utterances
+  to be hardest. They're **easier** — 0.660 vs 0.544 accuracy. Not a class-mix
+  artifact (macro F1 also higher; neutral share equal).
+- **The real ceiling:** 24 strings appear in test with *different gold labels*
+  (5.9% of test). `"Hey!"` is labelled anger, joy, neutral, sadness *and*
+  surprise. Identical input can't yield two outputs — provably unfixable
+  from text.
 
 ## Slide 6 — Conclusions (~40s)
 
-- Which model to pick, and the honest size of the gap.
-- Class weighting did / didn't buy rare-class recall (per-class evidence).
-- With more time: dialogue context (previous utterances), speaker embeddings,
-  and the multimodal signals MELD ships but this study ignores.
+- Pick **RoBERTa** — but for macro F1 / rare classes, and the gap is not settled.
+- Metric choice mattered more than any hyperparameter (lr spread 0.018, batch
+  0.015; best-epoch selection alone was worth 0.017).
+- With more time, in order: **multiple seeds + significance test** (nothing else
+  matters until the gap is real), **dialogue context** (attacks the ceiling
+  above), softer class weighting, then the multimodal signals MELD ships.
 
 ---
 
