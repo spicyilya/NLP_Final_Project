@@ -1,0 +1,4 @@
+model,weighted_f1,macro_f1,accuracy,lr,batch_size,best_epoch,dev_weighted_f1
+majority baseline (always neutral),0.3127,0.0928,0.4812,,,,
+bert-base-uncased,0.5928,0.4343,0.5759,2e-05,16.0,3.0,0.603
+roberta-base,0.605,0.4599,0.5908,5e-05,16.0,4.0,0.5843

@@ -123,7 +123,10 @@ for model_key, p in preds.items():
         "dev_weighted_f1": cfg["dev_weighted_f1"],
     })
 
-test_metrics = pd.DataFrame(rows).round(4)
+test_metrics = pd.DataFrame(rows)
+# Round only the metric columns — rounding `lr` would flatten 2e-5 to 0.0.
+metric_cols = ["weighted_f1", "macro_f1", "accuracy", "dev_weighted_f1"]
+test_metrics[metric_cols] = test_metrics[metric_cols].round(4)
 test_metrics.to_csv(utils.RESULTS / "test_metrics.csv", index=False)
 test_metrics
 
@@ -248,11 +251,8 @@ weighting_check.sort_values(["model", "train_pct"], ascending=[True, False])[
 # %% [markdown]
 # ## 6. Error analysis (step 9)
 #
-# The central limitation of text-only MELD: a large share of utterances are
-# short, generic lines whose emotion is carried by *delivery and dialogue
-# context*, not words. The sample below is drawn from the errors the better
-# model made with high confidence — these are the cases where the model was not
-# merely uncertain but confidently wrong.
+# The sample below is drawn from the errors the better model made with **high
+# confidence** — cases where it was not merely uncertain but confidently wrong.
 
 # %%
 best_model = max(best_configs, key=lambda k: best_configs[k]["dev_weighted_f1"])
@@ -273,22 +273,61 @@ sample = err.nlargest(10, "confidence")
 sample.to_csv(utils.RESULTS / "error_examples.csv", index=False)
 sample
 
+# %% [markdown]
+# ### Are short utterances harder? No — and this refutes the obvious hypothesis
+#
+# The intuitive story is that short, generic lines ("What?", "Hey.") should be
+# *hardest*, because their emotion lives in delivery and dialogue context that a
+# text-only model cannot see. We tested that directly. **It is false**: short
+# utterances are markedly *easier*.
+#
+# Two candidate explanations are ruled out below:
+#
+# 1. *"Short utterances are more often neutral, and the model leans neutral."*
+#    No — the neutral share is nearly identical in both groups (49.0% vs 47.8%).
+# 2. *"It's a class-mix artifact."* No — short utterances score higher on
+#    **both** neutral recall and non-neutral recall, and on macro F1, which is
+#    insensitive to class mix.
+#
+# The likelier explanation is that short emotional lines in this corpus are
+# **formulaic and lexically explicit** ("Oh my God!", "I'm so sorry") — the
+# emotion word *is* the utterance. Longer turns carry mixed or hedged content
+# where the emotional cue is diluted across a sentence.
+#
+# This does not rescue the context limitation — §5's ambiguity check shows that
+# is real — but it does relocate it. The problem is not utterance *length*.
+
 # %%
-# Are errors concentrated in short utterances? A quantitative version of the
-# "no context" claim above.
 correct_len = test.loc[y_true == p, "text"].str.split().str.len()
 error_len = test.loc[y_true != p, "text"].str.split().str.len()
 print(f"median words — correct: {correct_len.median():.0f} | errors: {error_len.median():.0f}")
 
-short = test["text"].str.split().str.len() <= 3
-print(f"\naccuracy on utterances <= 3 words ({short.sum():4d} of {len(test)}): "
-      f"{accuracy_score(y_true[short], p[short]):.3f}")
-print(f"accuracy on utterances >  3 words ({(~short).sum():4d} of {len(test)}): "
-      f"{accuracy_score(y_true[~short], p[~short]):.3f}")
+short = (test["text"].str.split().str.len() <= 3).to_numpy()
+for name, mask in [("<= 3 words", short), ("  > 3 words", ~short)]:
+    is_neutral = y_true[mask] == utils.LABEL2ID["neutral"]
+    print(
+        f"\n{name} (n={mask.sum():4d}): "
+        f"acc={accuracy_score(y_true[mask], p[mask]):.3f}  "
+        f"weighted_f1={f1_score(y_true[mask], p[mask], average='weighted', zero_division=0):.3f}  "
+        f"macro_f1={f1_score(y_true[mask], p[mask], average='macro', zero_division=0):.3f}"
+    )
+    print(f"    true neutral: {100 * is_neutral.mean():.1f}%  |  "
+          f"neutral recall: {(p[mask][is_neutral] == utils.LABEL2ID['neutral']).mean():.3f}  |  "
+          f"non-neutral recall: {(p[mask][~is_neutral] == y_true[mask][~is_neutral]).mean():.3f}")
+
+print("\n=> Short utterances are easier on every axis, including macro F1 —"
+      "\n   so this is not explained by class mix.")
+
+# %% [markdown]
+# ### The real ceiling: identical text, different gold label
+#
+# This is the honest, quantitative version of the "no dialogue context" claim.
+# The same string appears in test with **different gold labels** — an
+# irreducible ceiling for any text-only model, since identical input cannot
+# produce two different outputs. Whatever distinguishes an angry "Hey!" from a
+# joyful one is simply not in the text.
 
 # %%
-# The same string can appear with different gold labels — an irreducible ceiling
-# for any text-only model, since identical input cannot yield two outputs.
 dup = test.groupby("text")["label_name"].nunique()
 ambiguous = dup[dup > 1]
 n_ambig_utts = test["text"].isin(ambiguous.index).sum()

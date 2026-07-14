@@ -1,0 +1,15 @@
+model,emotion,precision,recall,f1,support
+bert,neutral,0.8088,0.6568,0.725,1256
+bert,joy,0.5544,0.6592,0.6023,402
+bert,surprise,0.5152,0.6619,0.5794,281
+bert,anger,0.5085,0.3449,0.4111,345
+bert,sadness,0.2776,0.351,0.31,208
+bert,disgust,0.2714,0.2794,0.2754,68
+bert,fear,0.087,0.32,0.1368,50
+roberta,neutral,0.8038,0.6783,0.7358,1256
+roberta,joy,0.5809,0.5896,0.5852,402
+roberta,surprise,0.485,0.6335,0.5494,281
+roberta,anger,0.4967,0.4319,0.462,345
+roberta,sadness,0.3348,0.375,0.3537,208
+roberta,disgust,0.25,0.4118,0.3111,68
+roberta,fear,0.1538,0.4,0.2222,50

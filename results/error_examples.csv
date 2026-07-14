@@ -1,0 +1,11 @@
+text,gold,pred,confidence,n_words
+Wow!,joy,surprise,0.956,1
+"Whoa-whoa you guys, it's not a cat!",anger,surprise,0.955,7
+Sorry.,neutral,sadness,0.95,1
+"Honey, it isn't good luck.",neutral,sadness,0.944,5
+What are we gonna do?,neutral,fear,0.943,5
+Okay.,joy,neutral,0.942,1
+"Whoa, I'm sorry. Excuse me. We had this cart.",anger,surprise,0.941,9
+"What. Oh no, you just rolled over the juice box.",sadness,surprise,0.938,10
+"Please, it's a relief is what it is, is what it is.",neutral,sadness,0.934,12
+I-I'll go tell her now before Ross finds out and I'll be gentle.,neutral,fear,0.933,13
