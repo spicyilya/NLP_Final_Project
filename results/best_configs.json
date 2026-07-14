@@ -1,0 +1,18 @@
+{
+  "bert": {
+    "learning_rate": 2e-05,
+    "batch_size": 16,
+    "best_epoch": 3,
+    "dev_weighted_f1": 0.603,
+    "dev_macro_f1": 0.5009,
+    "checkpoint": "checkpoints\\bert\\best"
+  },
+  "roberta": {
+    "learning_rate": 5e-05,
+    "batch_size": 16,
+    "best_epoch": 4,
+    "dev_weighted_f1": 0.5843,
+    "dev_macro_f1": 0.4468,
+    "checkpoint": "checkpoints\\roberta\\best"
+  }
+}

@@ -53,3 +53,220 @@ Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF
 {'loss': '1.299', 'grad_norm': '27.54', 'learning_rate': '1.277e-05', 'epoch': '2'}
 {'eval_loss': '1.433', 'eval_weighted_f1': '0.5651', 'eval_macro_f1': '0.4357', 'eval_accuracy': '0.541', 'eval_runtime': '0.2868', 'eval_samples_per_second': '3867', 'eval_steps_per_second': '62.77', 'epoch': '2'}
 Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.65it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.65it/s]
+{'loss': '0.9417', 'grad_norm': '15.86', 'learning_rate': '8.519e-06', 'epoch': '3'}
+{'eval_loss': '1.493', 'eval_weighted_f1': '0.603', 'eval_macro_f1': '0.5009', 'eval_accuracy': '0.5978', 'eval_runtime': '0.2698', 'eval_samples_per_second': '4110', 'eval_steps_per_second': '66.71', 'epoch': '3'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.57it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.57it/s]
+{'loss': '0.6655', 'grad_norm': '2.826', 'learning_rate': '4.263e-06', 'epoch': '4'}
+{'eval_loss': '1.634', 'eval_weighted_f1': '0.5903', 'eval_macro_f1': '0.4747', 'eval_accuracy': '0.5861', 'eval_runtime': '0.2641', 'eval_samples_per_second': '4199', 'eval_steps_per_second': '68.15', 'epoch': '4'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.11it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.09it/s]
+{'loss': '0.5128', 'grad_norm': '35.44', 'learning_rate': '6.81e-09', 'epoch': '5'}
+{'eval_loss': '1.774', 'eval_weighted_f1': '0.5865', 'eval_macro_f1': '0.4749', 'eval_accuracy': '0.5879', 'eval_runtime': '0.2729', 'eval_samples_per_second': '4064', 'eval_steps_per_second': '65.97', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.11it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.10it/s]
+{'train_runtime': '139.6', 'train_samples_per_second': '357.7', 'train_steps_per_second': '22.38', 'train_loss': '1.018', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.83it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.83it/s]
+--> dev weighted F1 0.6030 macro 0.5009 (best epoch 3, 140s)
+
+=== bert lr=2e-05 bs=32 ===
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 11055.48it/s]
+{'loss': '1.734', 'grad_norm': '12.08', 'learning_rate': '1.704e-05', 'epoch': '1'}
+{'eval_loss': '1.567', 'eval_weighted_f1': '0.5718', 'eval_macro_f1': '0.4234', 'eval_accuracy': '0.5573', 'eval_runtime': '0.265', 'eval_samples_per_second': '4184', 'eval_steps_per_second': '67.92', 'epoch': '1'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.36it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.36it/s]
+{'loss': '1.364', 'grad_norm': '22.36', 'learning_rate': '1.278e-05', 'epoch': '2'}
+{'eval_loss': '1.419', 'eval_weighted_f1': '0.5564', 'eval_macro_f1': '0.4338', 'eval_accuracy': '0.5347', 'eval_runtime': '0.2564', 'eval_samples_per_second': '4325', 'eval_steps_per_second': '70.2', 'epoch': '2'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.35it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.35it/s]
+{'loss': '1.076', 'grad_norm': '25.34', 'learning_rate': '8.525e-06', 'epoch': '3'}
+{'eval_loss': '1.408', 'eval_weighted_f1': '0.5629', 'eval_macro_f1': '0.4529', 'eval_accuracy': '0.5455', 'eval_runtime': '0.2596', 'eval_samples_per_second': '4272', 'eval_steps_per_second': '69.33', 'epoch': '3'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.36it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.36it/s]
+{'loss': '0.8491', 'grad_norm': '4.832', 'learning_rate': '4.269e-06', 'epoch': '4'}
+{'eval_loss': '1.468', 'eval_weighted_f1': '0.5755', 'eval_macro_f1': '0.4555', 'eval_accuracy': '0.5663', 'eval_runtime': '0.2741', 'eval_samples_per_second': '4046', 'eval_steps_per_second': '65.67', 'epoch': '4'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.11it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.11it/s]
+{'loss': '0.7228', 'grad_norm': '34.88', 'learning_rate': '1.36e-08', 'epoch': '5'}
+{'eval_loss': '1.53', 'eval_weighted_f1': '0.5805', 'eval_macro_f1': '0.4681', 'eval_accuracy': '0.5726', 'eval_runtime': '0.2691', 'eval_samples_per_second': '4121', 'eval_steps_per_second': '66.89', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.94it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.94it/s]
+{'train_runtime': '72.22', 'train_samples_per_second': '691.6', 'train_steps_per_second': '21.67', 'train_loss': '1.149', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.61it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.61it/s]
+--> dev weighted F1 0.5805 macro 0.4681 (best epoch 5, 72s)
+
+=== bert lr=5e-05 bs=16 ===
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 11054.45it/s]
+{'loss': '1.666', 'grad_norm': '15.25', 'learning_rate': '4.258e-05', 'epoch': '1'}
+{'eval_loss': '1.555', 'eval_weighted_f1': '0.5543', 'eval_macro_f1': '0.4144', 'eval_accuracy': '0.5329', 'eval_runtime': '0.2721', 'eval_samples_per_second': '4076', 'eval_steps_per_second': '66.16', 'epoch': '1'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.43it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.43it/s]
+{'loss': '1.293', 'grad_norm': '18.6', 'learning_rate': '3.194e-05', 'epoch': '2'}
+{'eval_loss': '1.512', 'eval_weighted_f1': '0.5592', 'eval_macro_f1': '0.4295', 'eval_accuracy': '0.5365', 'eval_runtime': '0.2542', 'eval_samples_per_second': '4362', 'eval_steps_per_second': '70.8', 'epoch': '2'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.15it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.15it/s]
+{'loss': '0.8112', 'grad_norm': '10.09', 'learning_rate': '2.13e-05', 'epoch': '3'}
+{'eval_loss': '1.718', 'eval_weighted_f1': '0.5972', 'eval_macro_f1': '0.484', 'eval_accuracy': '0.6005', 'eval_runtime': '0.2661', 'eval_samples_per_second': '4167', 'eval_steps_per_second': '67.64', 'epoch': '3'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.58it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.56it/s]
+{'loss': '0.4622', 'grad_norm': '2.129', 'learning_rate': '1.066e-05', 'epoch': '4'}
+{'eval_loss': '2.147', 'eval_weighted_f1': '0.584', 'eval_macro_f1': '0.4693', 'eval_accuracy': '0.5852', 'eval_runtime': '0.2722', 'eval_samples_per_second': '4075', 'eval_steps_per_second': '66.14', 'epoch': '4'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.00it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.00it/s]
+{'loss': '0.2787', 'grad_norm': '30.4', 'learning_rate': '1.702e-08', 'epoch': '5'}
+{'eval_loss': '2.497', 'eval_weighted_f1': '0.5817', 'eval_macro_f1': '0.4612', 'eval_accuracy': '0.5897', 'eval_runtime': '0.2682', 'eval_samples_per_second': '4136', 'eval_steps_per_second': '67.12', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.81it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.81it/s]
+{'train_runtime': '134.3', 'train_samples_per_second': '372', 'train_steps_per_second': '23.27', 'train_loss': '0.9021', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.69it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.69it/s]
+--> dev weighted F1 0.5972 macro 0.4840 (best epoch 3, 135s)
+
+=== bert lr=5e-05 bs=32 ===
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9476.34it/s]
+{'loss': '1.676', 'grad_norm': '14', 'learning_rate': '4.259e-05', 'epoch': '1'}
+{'eval_loss': '1.523', 'eval_weighted_f1': '0.5435', 'eval_macro_f1': '0.3988', 'eval_accuracy': '0.5095', 'eval_runtime': '0.25', 'eval_samples_per_second': '4435', 'eval_steps_per_second': '71.99', 'epoch': '1'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.69it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.69it/s]
+{'loss': '1.258', 'grad_norm': '18.13', 'learning_rate': '3.195e-05', 'epoch': '2'}
+{'eval_loss': '1.49', 'eval_weighted_f1': '0.5649', 'eval_macro_f1': '0.4377', 'eval_accuracy': '0.5338', 'eval_runtime': '0.2606', 'eval_samples_per_second': '4256', 'eval_steps_per_second': '69.08', 'epoch': '2'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.93it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.90it/s]
+{'loss': '0.7925', 'grad_norm': '9.555', 'learning_rate': '2.131e-05', 'epoch': '3'}
+{'eval_loss': '1.635', 'eval_weighted_f1': '0.5696', 'eval_macro_f1': '0.4493', 'eval_accuracy': '0.56', 'eval_runtime': '0.2558', 'eval_samples_per_second': '4335', 'eval_steps_per_second': '70.36', 'epoch': '3'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.09it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.09it/s]
+{'loss': '0.4736', 'grad_norm': '4.772', 'learning_rate': '1.067e-05', 'epoch': '4'}
+{'eval_loss': '1.891', 'eval_weighted_f1': '0.5906', 'eval_macro_f1': '0.4744', 'eval_accuracy': '0.5834', 'eval_runtime': '0.2658', 'eval_samples_per_second': '4173', 'eval_steps_per_second': '67.73', 'epoch': '4'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.75it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.75it/s]
+{'loss': '0.3188', 'grad_norm': '32.79', 'learning_rate': '3.399e-08', 'epoch': '5'}
+{'eval_loss': '2.119', 'eval_weighted_f1': '0.5919', 'eval_macro_f1': '0.4625', 'eval_accuracy': '0.5951', 'eval_runtime': '0.2548', 'eval_samples_per_second': '4352', 'eval_steps_per_second': '70.64', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.80it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.80it/s]
+{'train_runtime': '72.83', 'train_samples_per_second': '685.8', 'train_steps_per_second': '21.49', 'train_loss': '0.9038', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.05it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.03it/s]
+--> dev weighted F1 0.5919 macro 0.4625 (best epoch 5, 73s)
+tokenizing:   0%|          | 0/9989 [00:00<?, ? examples/s]tokenizing: 100%|██████████| 9989/9989 [00:00<00:00, 139674.50 examples/s]
+tokenizing:   0%|          | 0/1109 [00:00<?, ? examples/s]tokenizing: 100%|██████████| 1109/1109 [00:00<00:00, 92430.71 examples/s]
+
+=== roberta lr=1e-05 bs=16 ===
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 9361.76it/s]
+{'loss': '1.732', 'grad_norm': '27.56', 'learning_rate': '8.515e-06', 'epoch': '1'}
+{'eval_loss': '1.554', 'eval_weighted_f1': '0.5454', 'eval_macro_f1': '0.3941', 'eval_accuracy': '0.5347', 'eval_runtime': '0.2422', 'eval_samples_per_second': '4579', 'eval_steps_per_second': '74.32', 'epoch': '1'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.64it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.64it/s]
+{'loss': '1.434', 'grad_norm': '197.7', 'learning_rate': '6.387e-06', 'epoch': '2'}
+{'eval_loss': '1.472', 'eval_weighted_f1': '0.5332', 'eval_macro_f1': '0.4116', 'eval_accuracy': '0.4959', 'eval_runtime': '0.2656', 'eval_samples_per_second': '4176', 'eval_steps_per_second': '67.78', 'epoch': '2'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.93it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.93it/s]
+{'loss': '1.227', 'grad_norm': '113.1', 'learning_rate': '4.259e-06', 'epoch': '3'}
+{'eval_loss': '1.462', 'eval_weighted_f1': '0.5542', 'eval_macro_f1': '0.4348', 'eval_accuracy': '0.5374', 'eval_runtime': '0.2398', 'eval_samples_per_second': '4625', 'eval_steps_per_second': '75.07', 'epoch': '3'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.65it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.65it/s]
+{'loss': '1.093', 'grad_norm': '11.69', 'learning_rate': '2.131e-06', 'epoch': '4'}
+{'eval_loss': '1.481', 'eval_weighted_f1': '0.566', 'eval_macro_f1': '0.4475', 'eval_accuracy': '0.5555', 'eval_runtime': '0.2367', 'eval_samples_per_second': '4685', 'eval_steps_per_second': '76.04', 'epoch': '4'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.84it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.82it/s]
+{'loss': '0.994', 'grad_norm': '76.1', 'learning_rate': '3.405e-09', 'epoch': '5'}
+{'eval_loss': '1.509', 'eval_weighted_f1': '0.575', 'eval_macro_f1': '0.4565', 'eval_accuracy': '0.5663', 'eval_runtime': '0.2347', 'eval_samples_per_second': '4726', 'eval_steps_per_second': '76.7', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.57it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.57it/s]
+{'train_runtime': '138.3', 'train_samples_per_second': '361.1', 'train_steps_per_second': '22.59', 'train_loss': '1.296', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.91it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.91it/s]
+--> dev weighted F1 0.5750 macro 0.4565 (best epoch 5, 139s)
+
+=== roberta lr=1e-05 bs=32 ===
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 10756.87it/s]
+{'loss': '1.799', 'grad_norm': '33.96', 'learning_rate': '8.518e-06', 'epoch': '1'}
+{'eval_loss': '1.635', 'eval_weighted_f1': '0.5374', 'eval_macro_f1': '0.3793', 'eval_accuracy': '0.5311', 'eval_runtime': '0.2483', 'eval_samples_per_second': '4467', 'eval_steps_per_second': '72.51', 'epoch': '1'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.19it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.17it/s]
+{'loss': '1.471', 'grad_norm': '65.72', 'learning_rate': '6.39e-06', 'epoch': '2'}
+{'eval_loss': '1.457', 'eval_weighted_f1': '0.5414', 'eval_macro_f1': '0.4159', 'eval_accuracy': '0.5122', 'eval_runtime': '0.2421', 'eval_samples_per_second': '4580', 'eval_steps_per_second': '74.34', 'epoch': '2'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.76it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.76it/s]
+{'loss': '1.291', 'grad_norm': '98.47', 'learning_rate': '4.262e-06', 'epoch': '3'}
+{'eval_loss': '1.43', 'eval_weighted_f1': '0.5431', 'eval_macro_f1': '0.4245', 'eval_accuracy': '0.5257', 'eval_runtime': '0.2333', 'eval_samples_per_second': '4755', 'eval_steps_per_second': '77.17', 'epoch': '3'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.48it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.47it/s]
+{'loss': '1.169', 'grad_norm': '14.7', 'learning_rate': '2.135e-06', 'epoch': '4'}
+{'eval_loss': '1.43', 'eval_weighted_f1': '0.5546', 'eval_macro_f1': '0.432', 'eval_accuracy': '0.5383', 'eval_runtime': '0.2845', 'eval_samples_per_second': '3898', 'eval_steps_per_second': '63.26', 'epoch': '4'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.72it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.72it/s]
+{'loss': '1.083', 'grad_norm': '34.33', 'learning_rate': '6.798e-09', 'epoch': '5'}
+{'eval_loss': '1.454', 'eval_weighted_f1': '0.555', 'eval_macro_f1': '0.4339', 'eval_accuracy': '0.5419', 'eval_runtime': '0.2427', 'eval_samples_per_second': '4570', 'eval_steps_per_second': '74.18', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.53it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.53it/s]
+{'train_runtime': '75.36', 'train_samples_per_second': '662.7', 'train_steps_per_second': '20.77', 'train_loss': '1.363', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.40it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.40it/s]
+--> dev weighted F1 0.5550 macro 0.4339 (best epoch 5, 76s)
+
+=== roberta lr=2e-05 bs=16 ===
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 9849.89it/s]
+{'loss': '1.696', 'grad_norm': '24.33', 'learning_rate': '1.703e-05', 'epoch': '1'}
+{'eval_loss': '1.531', 'eval_weighted_f1': '0.5514', 'eval_macro_f1': '0.4066', 'eval_accuracy': '0.5275', 'eval_runtime': '0.2833', 'eval_samples_per_second': '3915', 'eval_steps_per_second': '63.54', 'epoch': '1'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.51it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.51it/s]
+{'loss': '1.387', 'grad_norm': '44.76', 'learning_rate': '1.277e-05', 'epoch': '2'}
+{'eval_loss': '1.484', 'eval_weighted_f1': '0.5563', 'eval_macro_f1': '0.4284', 'eval_accuracy': '0.5248', 'eval_runtime': '0.2331', 'eval_samples_per_second': '4758', 'eval_steps_per_second': '77.22', 'epoch': '2'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.89it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.88it/s]
+{'loss': '1.112', 'grad_norm': '94.32', 'learning_rate': '8.519e-06', 'epoch': '3'}
+{'eval_loss': '1.567', 'eval_weighted_f1': '0.5663', 'eval_macro_f1': '0.4328', 'eval_accuracy': '0.5509', 'eval_runtime': '0.2461', 'eval_samples_per_second': '4506', 'eval_steps_per_second': '73.13', 'epoch': '3'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.06it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.06it/s]
+{'loss': '0.8983', 'grad_norm': '18.36', 'learning_rate': '4.263e-06', 'epoch': '4'}
+{'eval_loss': '1.663', 'eval_weighted_f1': '0.5784', 'eval_macro_f1': '0.4453', 'eval_accuracy': '0.5717', 'eval_runtime': '0.2386', 'eval_samples_per_second': '4647', 'eval_steps_per_second': '75.43', 'epoch': '4'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.06it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.04it/s]
+{'loss': '0.7394', 'grad_norm': '99.85', 'learning_rate': '6.81e-09', 'epoch': '5'}
+{'eval_loss': '1.73', 'eval_weighted_f1': '0.5765', 'eval_macro_f1': '0.4468', 'eval_accuracy': '0.5717', 'eval_runtime': '0.2575', 'eval_samples_per_second': '4308', 'eval_steps_per_second': '69.91', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.84it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.84it/s]
+{'train_runtime': '143.1', 'train_samples_per_second': '348.9', 'train_steps_per_second': '21.83', 'train_loss': '1.167', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.87it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.87it/s]
+--> dev weighted F1 0.5784 macro 0.4453 (best epoch 4, 144s)
+
+=== roberta lr=2e-05 bs=32 ===
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 11586.80it/s]
+{'loss': '1.731', 'grad_norm': '18.15', 'learning_rate': '1.704e-05', 'epoch': '1'}
+{'eval_loss': '1.608', 'eval_weighted_f1': '0.5826', 'eval_macro_f1': '0.4172', 'eval_accuracy': '0.5816', 'eval_runtime': '0.2571', 'eval_samples_per_second': '4313', 'eval_steps_per_second': '70', 'epoch': '1'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.35it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.35it/s]
+{'loss': '1.416', 'grad_norm': '49.99', 'learning_rate': '1.278e-05', 'epoch': '2'}
+{'eval_loss': '1.49', 'eval_weighted_f1': '0.535', 'eval_macro_f1': '0.4184', 'eval_accuracy': '0.5095', 'eval_runtime': '0.2331', 'eval_samples_per_second': '4757', 'eval_steps_per_second': '77.22', 'epoch': '2'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.06it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.06it/s]
+{'loss': '1.168', 'grad_norm': '120.5', 'learning_rate': '8.525e-06', 'epoch': '3'}
+{'eval_loss': '1.517', 'eval_weighted_f1': '0.5472', 'eval_macro_f1': '0.4304', 'eval_accuracy': '0.5284', 'eval_runtime': '0.2431', 'eval_samples_per_second': '4562', 'eval_steps_per_second': '74.05', 'epoch': '3'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.84it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.83it/s]
+{'loss': '0.9772', 'grad_norm': '11.28', 'learning_rate': '4.269e-06', 'epoch': '4'}
+{'eval_loss': '1.566', 'eval_weighted_f1': '0.5677', 'eval_macro_f1': '0.4476', 'eval_accuracy': '0.5537', 'eval_runtime': '0.2321', 'eval_samples_per_second': '4779', 'eval_steps_per_second': '77.56', 'epoch': '4'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.09it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.09it/s]
+{'loss': '0.8493', 'grad_norm': '41.11', 'learning_rate': '1.36e-08', 'epoch': '5'}
+{'eval_loss': '1.606', 'eval_weighted_f1': '0.5727', 'eval_macro_f1': '0.4542', 'eval_accuracy': '0.5618', 'eval_runtime': '0.2645', 'eval_samples_per_second': '4194', 'eval_steps_per_second': '68.06', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.57it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.56it/s]
+{'train_runtime': '76.19', 'train_samples_per_second': '655.5', 'train_steps_per_second': '20.54', 'train_loss': '1.228', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.05it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.05it/s]
+--> dev weighted F1 0.5826 macro 0.4172 (best epoch 1, 77s)
+
+=== roberta lr=5e-05 bs=16 ===
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 10940.75it/s]
+{'loss': '1.721', 'grad_norm': '18.31', 'learning_rate': '4.258e-05', 'epoch': '1'}
+{'eval_loss': '1.608', 'eval_weighted_f1': '0.5049', 'eval_macro_f1': '0.3679', 'eval_accuracy': '0.4851', 'eval_runtime': '0.2411', 'eval_samples_per_second': '4599', 'eval_steps_per_second': '74.65', 'epoch': '1'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.33it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.33it/s]
+{'loss': '1.448', 'grad_norm': '30.96', 'learning_rate': '3.194e-05', 'epoch': '2'}
+{'eval_loss': '1.525', 'eval_weighted_f1': '0.5498', 'eval_macro_f1': '0.414', 'eval_accuracy': '0.5203', 'eval_runtime': '0.2522', 'eval_samples_per_second': '4397', 'eval_steps_per_second': '71.38', 'epoch': '2'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.11it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.11it/s]
+{'loss': '1.132', 'grad_norm': '41.53', 'learning_rate': '2.13e-05', 'epoch': '3'}
+{'eval_loss': '1.638', 'eval_weighted_f1': '0.5543', 'eval_macro_f1': '0.4295', 'eval_accuracy': '0.5419', 'eval_runtime': '0.2613', 'eval_samples_per_second': '4244', 'eval_steps_per_second': '68.88', 'epoch': '3'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.04it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.04it/s]
+{'loss': '0.8574', 'grad_norm': '5.809', 'learning_rate': '1.066e-05', 'epoch': '4'}
+{'eval_loss': '1.775', 'eval_weighted_f1': '0.5843', 'eval_macro_f1': '0.4468', 'eval_accuracy': '0.5744', 'eval_runtime': '0.2472', 'eval_samples_per_second': '4486', 'eval_steps_per_second': '72.82', 'epoch': '4'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.90it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.88it/s]
+{'loss': '0.6018', 'grad_norm': '52.54', 'learning_rate': '1.702e-08', 'epoch': '5'}
+{'eval_loss': '1.949', 'eval_weighted_f1': '0.5704', 'eval_macro_f1': '0.4492', 'eval_accuracy': '0.5654', 'eval_runtime': '0.2416', 'eval_samples_per_second': '4590', 'eval_steps_per_second': '74.49', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.95it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.95it/s]
+{'train_runtime': '144.3', 'train_samples_per_second': '346', 'train_steps_per_second': '21.65', 'train_loss': '1.152', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.81it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.81it/s]
+--> dev weighted F1 0.5843 macro 0.4468 (best epoch 4, 145s)
+
+=== roberta lr=5e-05 bs=32 ===
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 10943.35it/s]
+{'loss': '1.718', 'grad_norm': '20.69', 'learning_rate': '4.259e-05', 'epoch': '1'}
+{'eval_loss': '1.642', 'eval_weighted_f1': '0.5327', 'eval_macro_f1': '0.3811', 'eval_accuracy': '0.5086', 'eval_runtime': '0.2382', 'eval_samples_per_second': '4657', 'eval_steps_per_second': '75.58', 'epoch': '1'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.26it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.26it/s]
+{'loss': '1.438', 'grad_norm': '45.8', 'learning_rate': '3.195e-05', 'epoch': '2'}
+{'eval_loss': '1.535', 'eval_weighted_f1': '0.5037', 'eval_macro_f1': '0.3936', 'eval_accuracy': '0.4608', 'eval_runtime': '0.25', 'eval_samples_per_second': '4437', 'eval_steps_per_second': '72.01', 'epoch': '2'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.12it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.12it/s]
+{'loss': '1.139', 'grad_norm': '127.2', 'learning_rate': '2.131e-05', 'epoch': '3'}
+{'eval_loss': '1.544', 'eval_weighted_f1': '0.5484', 'eval_macro_f1': '0.4266', 'eval_accuracy': '0.5392', 'eval_runtime': '0.2398', 'eval_samples_per_second': '4624', 'eval_steps_per_second': '75.06', 'epoch': '3'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.13it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.13it/s]
+{'loss': '0.874', 'grad_norm': '7.174', 'learning_rate': '1.067e-05', 'epoch': '4'}
+{'eval_loss': '1.691', 'eval_weighted_f1': '0.5574', 'eval_macro_f1': '0.4359', 'eval_accuracy': '0.5455', 'eval_runtime': '0.2427', 'eval_samples_per_second': '4570', 'eval_steps_per_second': '74.17', 'epoch': '4'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.93it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.93it/s]
+{'loss': '0.6743', 'grad_norm': '78.52', 'learning_rate': '3.399e-08', 'epoch': '5'}
+{'eval_loss': '1.781', 'eval_weighted_f1': '0.563', 'eval_macro_f1': '0.453', 'eval_accuracy': '0.5564', 'eval_runtime': '0.2848', 'eval_samples_per_second': '3894', 'eval_steps_per_second': '63.2', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.88it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.88it/s]
+{'train_runtime': '76.65', 'train_samples_per_second': '651.6', 'train_steps_per_second': '20.42', 'train_loss': '1.169', 'epoch': '5'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.79it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.78it/s]
+--> dev weighted F1 0.5630 macro 0.4530 (best epoch 5, 77s)
+
+  model        model_name  learning_rate  batch_size  max_epochs  best_epoch  dev_weighted_f1  dev_macro_f1  dev_accuracy  dev_loss  wall_time_s                     epoch_f1_trace
+   bert bert-base-uncased        0.00001          16           5           4           0.5879        0.4636        0.5816    1.4534        141.5 0.5674;0.5755;0.5726;0.5879;0.5834
+   bert bert-base-uncased        0.00001          32           5           5           0.5711        0.4424        0.5600    1.4218         78.3 0.5387;0.5596;0.5602;0.5709;0.5711
+   bert bert-base-uncased        0.00002          16           5           3           0.6030        0.5009        0.5978    1.4929        140.1 0.5618;0.5651;0.6030;0.5903;0.5865
+   bert bert-base-uncased        0.00002          32           5           5           0.5805        0.4681        0.5726    1.5297         72.5 0.5718;0.5564;0.5629;0.5755;0.5805
+   bert bert-base-uncased        0.00005          16           5           3           0.5972        0.4840        0.6005    1.7184        134.7 0.5543;0.5592;0.5972;0.5840;0.5817
+   bert bert-base-uncased        0.00005          32           5           5           0.5919        0.4625        0.5951    2.1192         73.1 0.5435;0.5649;0.5696;0.5906;0.5919
+roberta      roberta-base        0.00001          16           5           5           0.5750        0.4565        0.5663    1.5093        138.7 0.5454;0.5332;0.5542;0.5660;0.5750
+roberta      roberta-base        0.00001          32           5           5           0.5550        0.4339        0.5419    1.4536         75.7 0.5374;0.5414;0.5431;0.5546;0.5550
+roberta      roberta-base        0.00002          16           5           4           0.5784        0.4453        0.5717    1.6626        143.6 0.5514;0.5563;0.5663;0.5784;0.5765
+roberta      roberta-base        0.00002          32           5           1           0.5826        0.4172        0.5816    1.6083         76.7 0.5826;0.5350;0.5472;0.5677;0.5727
+roberta      roberta-base        0.00005          16           5           4           0.5843        0.4468        0.5744    1.7748        144.8 0.5049;0.5498;0.5543;0.5843;0.5704
+roberta      roberta-base        0.00005          32           5           5           0.5630        0.4530        0.5564    1.7813         77.0 0.5327;0.5037;0.5484;0.5574;0.5630
