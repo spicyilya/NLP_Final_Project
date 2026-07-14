@@ -1,0 +1,4 @@
+split,rows,null_utterance,null_emotion,empty_after_clean,duplicate_text_emotion,unique_speakers,dialogues
+train,9989,0,0,0,931,260,1038
+dev,1109,0,0,0,55,47,114
+test,2610,0,0,0,182,100,280

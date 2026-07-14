@@ -1,0 +1,4 @@
+split,n_utterances,n_dialogues,n_speakers,words_mean,words_median,words_p95,words_max
+train,9989,1038,260,7.95,6,20,69
+dev,1109,114,47,7.91,6,20,37
+test,2610,280,100,8.21,7,21,45
