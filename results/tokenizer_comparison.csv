@@ -1,0 +1,7 @@
+utterance,model,n_tokens,tokens
+"Oh my God, I can't believe you did that!",bert,13,"oh my god , i can ' t believe you did that !"
+"Oh my God, I can't believe you did that!",roberta,12,"Oh Ġmy ĠGod , ĠI Ġcan 't Ġbelieve Ġyou Ġdid Ġthat !"
+PIVOT! PIVOT! PIVOT!,bert,9,pi ##vot ! pi ##vot ! pi ##vot !
+PIVOT! PIVOT! PIVOT!,roberta,12,P IV OT ! ĠP IV OT ! ĠP IV OT !
+Whaaaat? Noooo way...,bert,12,w ##ha ##aa ##at ? no ##oo ##o way . . .
+Whaaaat? Noooo way...,roberta,8,Wh aaa at ? ĠNo ooo Ġway ...

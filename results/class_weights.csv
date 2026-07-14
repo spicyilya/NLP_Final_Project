@@ -1,0 +1,8 @@
+label_id,emotion,train_count,train_pct,weight
+0,neutral,4710,47.15,0.303
+1,joy,1743,17.45,0.8187
+2,surprise,1205,12.06,1.1842
+3,anger,1109,11.1,1.2867
+4,sadness,683,6.84,2.0893
+5,disgust,271,2.71,5.2657
+6,fear,268,2.68,5.3246
