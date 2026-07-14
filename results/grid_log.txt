@@ -1,0 +1,19 @@
+grid: 12 runs, 0 already complete
+tokenizing:   0%|          | 0/9989 [00:00<?, ? examples/s]tokenizing:  20%|██        | 2000/9989 [00:00<00:00, 9460.29 examples/s]tokenizing: 100%|██████████| 9989/9989 [00:00<00:00, 35044.83 examples/s]
+tokenizing:   0%|          | 0/1109 [00:00<?, ? examples/s]tokenizing: 100%|██████████| 1109/1109 [00:00<00:00, 55436.18 examples/s]
+
+=== bert lr=1e-05 bs=16 ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9949.89it/s]
+{'loss': '1.733', 'grad_norm': '10.97', 'learning_rate': '8.515e-06', 'epoch': '1'}
+{'eval_loss': '1.574', 'eval_weighted_f1': '0.5674', 'eval_macro_f1': '0.4038', 'eval_accuracy': '0.5672', 'eval_runtime': '0.3314', 'eval_samples_per_second': '3347', 'eval_steps_per_second': '54.32', 'epoch': '1'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.84it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.84it/s]
+{'loss': '1.408', 'grad_norm': '19.87', 'learning_rate': '6.387e-06', 'epoch': '2'}
+{'eval_loss': '1.434', 'eval_weighted_f1': '0.5755', 'eval_macro_f1': '0.4414', 'eval_accuracy': '0.5582', 'eval_runtime': '0.2859', 'eval_samples_per_second': '3879', 'eval_steps_per_second': '62.96', 'epoch': '2'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.76it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.76it/s]
+{'loss': '1.188', 'grad_norm': '27.99', 'learning_rate': '4.259e-06', 'epoch': '3'}
+{'eval_loss': '1.409', 'eval_weighted_f1': '0.5726', 'eval_macro_f1': '0.4513', 'eval_accuracy': '0.5591', 'eval_runtime': '0.3173', 'eval_samples_per_second': '3495', 'eval_steps_per_second': '56.72', 'epoch': '3'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.79it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.79it/s]
+{'loss': '1.018', 'grad_norm': '5.798', 'learning_rate': '2.131e-06', 'epoch': '4'}
+{'eval_loss': '1.453', 'eval_weighted_f1': '0.5879', 'eval_macro_f1': '0.4636', 'eval_accuracy': '0.5816', 'eval_runtime': '0.2656', 'eval_samples_per_second': '4175', 'eval_steps_per_second': '67.76', 'epoch': '4'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.91it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.88it/s]
