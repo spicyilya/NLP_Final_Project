@@ -47,3 +47,9 @@ Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF
 
 === bert lr=2e-05 bs=16 ===
 Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 10474.97it/s]
+{'loss': '1.67', 'grad_norm': '13.38', 'learning_rate': '1.703e-05', 'epoch': '1'}
+{'eval_loss': '1.52', 'eval_weighted_f1': '0.5618', 'eval_macro_f1': '0.411', 'eval_accuracy': '0.5473', 'eval_runtime': '0.2778', 'eval_samples_per_second': '3991', 'eval_steps_per_second': '64.78', 'epoch': '1'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.54it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  5.54it/s]
+{'loss': '1.299', 'grad_norm': '27.54', 'learning_rate': '1.277e-05', 'epoch': '2'}
+{'eval_loss': '1.433', 'eval_weighted_f1': '0.5651', 'eval_macro_f1': '0.4357', 'eval_accuracy': '0.541', 'eval_runtime': '0.2868', 'eval_samples_per_second': '3867', 'eval_steps_per_second': '62.77', 'epoch': '2'}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.65it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  4.65it/s]
