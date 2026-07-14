@@ -1,0 +1,77 @@
+I have the following assignment:
+
+
+
+1. You are asked to complete one of the following two types of tasks:   a. Text classification (e.g., sentiment analysis, emotion detection, news classification, etc.)
+
+   b. Token classification (e.g., NER, PoS Tagging, etc.)
+
+
+
+2. The objectives of this assignment are:  a. to understand the fine-tuning process
+
+  b. to perform hyperparameter tuning
+
+  c. to evaluate model performance
+
+  d. to compare several pre-trained language models
+
+
+
+3. Select a dataset relevant to your task. You can use a dataset from another source or create your own. Describe the selected dataset:   a. dataset size
+
+   b. number of classes (for text classification) or entity/token types (for token classification), etc.
+
+
+
+4. Perform preprocessing, such as:   a. Tokenization using the tokenizer of the model to be fine-tuned
+
+   b. Dividing the data into training, validation, and testing sets
+
+   c. Handling imbalance (optional if data distribution is uneven).
+
+
+
+5. Selecting a Pre-trained Language Model.   a. Select one or two models from the Hugging Face Model Hub (https://huggingface.co/models) for your experiment (BERT, IndoBERT, RoBERTa, XLM-RoBERTa, etc.).
+
+   b. Ensure the selected model supports the languages ​​in your dataset.
+
+
+
+6. To perform fine-tuning, you may implement one of the following approaches:   a. Full fine-tuning
+
+   b. Efficient parameter fine-tuning with LoRA
+
+
+
+7. Define and explore the hyperparameters you use and provide justification for each selected hyperparameter value, including:   a. Learning rate
+
+   b. Batch size
+
+   c. Number of epochs
+
+
+
+8. If possible, visualize the results (confusion matrix, etc.)
+
+
+
+9. Analyze your results by comparing the results of each experiment.
+
+10. Upload the code and report to the GitHub repository. Include your GitHub link in your Classroom.
+
+11. Grading Requirements   a. This project will be presented on Week #14 meeting (if possible), if not possible you are required to make a 5 minutes presentation video and submit the URL of the video along with your documentation of the project.
+
+   b. Selection of an appropriate dataset
+
+   c. Explanation of preprocessing and tokenization
+
+   d. Hyperparameter tuning experiment
+
+   e. Fine-tuning implementation
+
+   f. Report and presentation
+
+   g. Clean and documented code
+
+   h. Final documentation can be submitted until the day of. final exam
