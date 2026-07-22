@@ -41,10 +41,6 @@ The written report is in [`deliverables/`](deliverables/):
 
 **[`MELD_Emotion_Classification_Report.pdf`](deliverables/MELD_Emotion_Classification_Report.pdf)** — 16 pages, all 8 figures embedded.
 
-Every number in it is read from `results/`; nothing is recomputed by hand. The
-embedded figures are the same PNGs in `results/figures/`. The accompanying slide
-deck is not included in this repository.
-
 Notebooks are authored as [jupytext](https://jupytext.readthedocs.io) `.py`
 files (the reviewable source of truth) and paired to `.ipynb`.
 
