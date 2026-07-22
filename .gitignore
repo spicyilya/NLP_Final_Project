@@ -25,8 +25,23 @@ data/raw/
 data/processed/
 
 
-# Editor/agent local settings
+# Local editor settings
 .claude/
 
-# Internal working plan (not part of the deliverable)
+# Internal working notes (not part of the deliverable)
 PLAN.md
+
+# Report — still in progress, tracked again once finalized
+report.md
+
+# Slide deck — kept locally, not part of the repo
+MELD_Emotion_Classification_Deck.pptx
+
+# DOCX source of the report; the PDF in deliverables/ is what ships
+/MELD_Emotion_Classification_Report.docx
+
+# Handoff notes (scaffolding, not a deliverable)
+report_handoff.md
+
+# Speaker-notes doc — kept locally, not part of the repo
+MELD_Presentation_Talking_Points.docx

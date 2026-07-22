@@ -3,7 +3,7 @@
 Fine-tuning and comparing `bert-base-uncased` and `roberta-base` on 7-class
 emotion classification over the **MELD** dataset (text only).
 
-**Full write-up: [`report.md`](report.md).**
+**Full write-up: [`deliverables/MELD_Emotion_Classification_Report.pdf`](deliverables/MELD_Emotion_Classification_Report.pdf).**
 
 ## What this is
 
@@ -32,8 +32,18 @@ scripts/
   download_data.py fetch MELD CSVs
 checkpoints/       best checkpoint per model (gitignored, regenerable)
 results/           metrics tables, hyperparameter search CSV, figures/
-report.md          the assignment report
+deliverables/      the submitted report
 ```
+
+## Deliverables
+
+The written report is in [`deliverables/`](deliverables/):
+
+**[`MELD_Emotion_Classification_Report.pdf`](deliverables/MELD_Emotion_Classification_Report.pdf)** — 16 pages, all 8 figures embedded.
+
+Every number in it is read from `results/`; nothing is recomputed by hand. The
+embedded figures are the same PNGs in `results/figures/`. The accompanying slide
+deck is not included in this repository.
 
 Notebooks are authored as [jupytext](https://jupytext.readthedocs.io) `.py`
 files (the reviewable source of truth) and paired to `.ipynb`.
@@ -130,4 +140,4 @@ non-deterministic reductions introduce small run-to-run variation.
 The test split is used **once**, in notebook 04. Every modelling decision was
 made on dev.
 
-Results, figures, and analysis: **[`report.md`](report.md)**.
+Results, figures, and analysis: **[`deliverables/MELD_Emotion_Classification_Report.pdf`](deliverables/MELD_Emotion_Classification_Report.pdf)**.
