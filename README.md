@@ -39,7 +39,7 @@ deliverables/      the submitted report
 
 The written report is in [`deliverables/`](deliverables/):
 
-**[`MELD_Emotion_Classification_Report.pdf`](deliverables/MELD_Emotion_Classification_Report.pdf)** — 16 pages, all 8 figures embedded.
+**[`MELD_Emotion_Classification_Report.pdf`](deliverables/MELD_Emotion_Classification_Report.pdf)**
 
 Notebooks are authored as [jupytext](https://jupytext.readthedocs.io) `.py`
 files (the reviewable source of truth) and paired to `.ipynb`.
@@ -68,7 +68,7 @@ them and re-splitting would leak dialogue context across the boundary.
 ### 1. Environment
 
 Requires an NVIDIA GPU. Developed on an RTX 5070 (12 GB, Blackwell `sm_120`),
-which needs a CUDA 12.x build of PyTorch — the default PyPI wheel will not work:
+which needs a CUDA 12.x+ build of PyTorch — the default PyPI wheel will not work:
 
 ```bash
 uv venv .venv
